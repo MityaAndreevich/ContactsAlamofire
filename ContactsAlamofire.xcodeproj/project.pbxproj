@@ -15,6 +15,7 @@
 		5FF832672797F802000752F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF832652797F802000752F2 /* LaunchScreen.storyboard */; };
 		5FF8326F2797F83C000752F2 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF8326E2797F83C000752F2 /* Contact.swift */; };
 		5FF832742797FAF9000752F2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF832732797FAF9000752F2 /* NetworkManager.swift */; };
+		5FF832772797FC99000752F2 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF832762797FC99000752F2 /* ContactsTableViewController.swift */; };
 		927B0489EFFA61C7DB03331A /* Pods_ContactsAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6792CFF89E957EB8A33754 /* Pods_ContactsAlamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		5FF832682797F802000752F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF8326E2797F83C000752F2 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		5FF832732797FAF9000752F2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5FF832762797FC99000752F2 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		870AD64150598BDABB8A69D8 /* Pods-ContactsAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsAlamofire.debug.xcconfig"; path = "Target Support Files/Pods-ContactsAlamofire/Pods-ContactsAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 		5FF832722797F8C7000752F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5FF832762797FC99000752F2 /* ContactsTableViewController.swift */,
 				5FF8325E2797F801000752F2 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -246,6 +249,7 @@
 			files = (
 				5FF8326F2797F83C000752F2 /* Contact.swift in Sources */,
 				5FF8325F2797F801000752F2 /* ViewController.swift in Sources */,
+				5FF832772797FC99000752F2 /* ContactsTableViewController.swift in Sources */,
 				5FF832742797FAF9000752F2 /* NetworkManager.swift in Sources */,
 				5FF8325B2797F801000752F2 /* AppDelegate.swift in Sources */,
 				5FF8325D2797F801000752F2 /* SceneDelegate.swift in Sources */,
