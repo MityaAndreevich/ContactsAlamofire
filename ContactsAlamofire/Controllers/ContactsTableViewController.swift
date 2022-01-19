@@ -46,8 +46,21 @@ class ContactsTableViewController: UITableViewController {
         
         return cell
     }
+    //MARK: - Table View delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = randomContacts[indexPath.row]
+        performSegue(withIdentifier: "showDetails", sender: user )
+    }
     
-    private func downloadData() {
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsVC = segue.destination as? DetailedViewController else { return }
+        detailsVC.contact = sender as? Contact
+    }
+}
+    
+    extension ContactsTableViewController {
+    func downloadData() {
         NetworkManager.shared.fetchDataWithAlamofire(Link.linkFor50.rawValue) { result in
             switch result {
             case .success(let randomContacts):
@@ -58,15 +71,5 @@ class ContactsTableViewController: UITableViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

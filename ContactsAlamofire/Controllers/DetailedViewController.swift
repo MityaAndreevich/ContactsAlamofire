@@ -20,7 +20,7 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var headerSurname: UILabel!
     @IBOutlet weak var contactSurnameLabel: UILabel!
     
-    var result: Contact!
+    var contact: Contact!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,17 @@ class DetailedViewController: UIViewController {
         headerName.textColor = UIColor.blue
         headerSurname.text = "Surname:"
         headerSurname.textColor = UIColor.blue
+        setValue(with: contact)
+    }
+    
+    private func setValue(with contact: Contact) {
+        if let imageURL = contact.picture?.large{
+            NetworkManager.shared.fetchImage(from: imageURL) { imageData in
+                self.contactImageView.image = UIImage(data: imageData)
+            }
+        }
+        contactNameLabel.text = contact.name?.first ?? "No Info"
+        contactSurnameLabel.text = contact.name?.last ?? "No info"
     }
 
 
