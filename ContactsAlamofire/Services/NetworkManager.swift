@@ -29,9 +29,9 @@ class NetworkManager {
                 switch dataResponse.result {
                 case .success(let value):
                     guard let results = Contact.getRandomContacts(from: value) else { return }
-                    DispatchQueue.main.async {
+                   // DispatchQueue.main.async {
                         completion(.success(results))
-                    }
+                    //}
                 case .failure(let error):
                     completion(.failure(.decodingError))
                     print(error)

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class ContactsTableViewController: UITableViewController {
     
@@ -46,21 +45,20 @@ class ContactsTableViewController: UITableViewController {
         
         return cell
     }
-    //MARK: - Table View delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let user = randomContacts[indexPath.row]
-        performSegue(withIdentifier: "showDetails", sender: user )
-    }
-    
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailsVC = segue.destination as? DetailedViewController else { return }
-        detailsVC.contact = sender as? Contact
+        guard let detailedVC = segue.destination as? DetailedViewController else { return }
+        detailedVC.contactDetails = sender as? Contact
+    }
+    //MARK: - Table View Delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contact = randomContacts[indexPath.row]
+        performSegue(withIdentifier: "showDetails", sender: contact )
     }
 }
     
-    extension ContactsTableViewController {
-    func downloadData() {
+extension ContactsTableViewController {
+    private func downloadData() {
         NetworkManager.shared.fetchDataWithAlamofire(Link.linkFor50.rawValue) { result in
             switch result {
             case .success(let randomContacts):
