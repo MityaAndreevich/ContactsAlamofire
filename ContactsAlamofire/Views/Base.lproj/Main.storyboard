@@ -112,6 +112,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detailed info" id="0QT-6A-Ugh"/>
+                    <connections>
+                        <outlet property="contactImageView" destination="moV-4O-O6R" id="DNp-z3-7or"/>
+                        <outlet property="contactNameLabel" destination="Atr-bt-CFJ" id="jEO-aq-guu"/>
+                        <outlet property="contactSurnameLabel" destination="oad-nZ-Lh5" id="qbL-ft-b6q"/>
+                        <outlet property="headerName" destination="4Z9-0z-d7Q" id="xiH-wt-lQv"/>
+                        <outlet property="headerSurname" destination="Ue5-Kp-Ubf" id="1Ad-xM-Dha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

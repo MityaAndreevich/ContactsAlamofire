@@ -11,21 +11,21 @@ import Alamofire
 class ContactsTableViewController: UITableViewController {
     
     private var randomContacts: [Contact] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100
         downloadData()
     }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         randomContacts.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-
+        
         var content = cell.defaultContentConfiguration()
         
         content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
@@ -58,10 +58,6 @@ class ContactsTableViewController: UITableViewController {
             }
         }
     }
-   
-
-   
-
     /*
     // MARK: - Navigation
 
