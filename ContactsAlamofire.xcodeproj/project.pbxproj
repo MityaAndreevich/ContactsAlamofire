@@ -13,6 +13,7 @@
 		5FF832622797F801000752F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF832602797F801000752F2 /* Main.storyboard */; };
 		5FF832642797F802000752F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF832632797F802000752F2 /* Assets.xcassets */; };
 		5FF832672797F802000752F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF832652797F802000752F2 /* LaunchScreen.storyboard */; };
+		5FF8326F2797F83C000752F2 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF8326E2797F83C000752F2 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5FF832632797F802000752F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF832662797F802000752F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF832682797F802000752F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF8326E2797F83C000752F2 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				5FF832632797F802000752F2 /* Assets.xcassets */,
 				5FF832652797F802000752F2 /* LaunchScreen.storyboard */,
 				5FF832682797F802000752F2 /* Info.plist */,
+				5FF832702797F846000752F2 /* Models */,
 			);
 			path = ContactsAlamofire;
+			sourceTree = "<group>";
+		};
+		5FF832702797F846000752F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FF8326E2797F83C000752F2 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF8326F2797F83C000752F2 /* Contact.swift in Sources */,
 				5FF8325F2797F801000752F2 /* ViewController.swift in Sources */,
 				5FF8325B2797F801000752F2 /* AppDelegate.swift in Sources */,
 				5FF8325D2797F801000752F2 /* SceneDelegate.swift in Sources */,
