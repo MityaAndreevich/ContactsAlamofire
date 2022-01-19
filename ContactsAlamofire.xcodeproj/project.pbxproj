@@ -60,12 +60,11 @@
 			children = (
 				5FF8325A2797F801000752F2 /* AppDelegate.swift */,
 				5FF8325C2797F801000752F2 /* SceneDelegate.swift */,
-				5FF8325E2797F801000752F2 /* ViewController.swift */,
-				5FF832602797F801000752F2 /* Main.storyboard */,
-				5FF832632797F802000752F2 /* Assets.xcassets */,
-				5FF832652797F802000752F2 /* LaunchScreen.storyboard */,
-				5FF832682797F802000752F2 /* Info.plist */,
 				5FF832702797F846000752F2 /* Models */,
+				5FF832712797F8A1000752F2 /* Views */,
+				5FF832722797F8C7000752F2 /* Controllers */,
+				5FF832632797F802000752F2 /* Assets.xcassets */,
+				5FF832682797F802000752F2 /* Info.plist */,
 			);
 			path = ContactsAlamofire;
 			sourceTree = "<group>";
@@ -76,6 +75,23 @@
 				5FF8326E2797F83C000752F2 /* Contact.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5FF832712797F8A1000752F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FF832602797F801000752F2 /* Main.storyboard */,
+				5FF832652797F802000752F2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FF832722797F8C7000752F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FF8325E2797F801000752F2 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
